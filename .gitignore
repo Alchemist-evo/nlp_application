@@ -1,0 +1,23 @@
+# --- data artefacts (regenerable) ---
+# The shared PS4 sample is written here by Part A. It is fully reproducible from
+# RANDOM_STATE = 42, so Members 2-4 can either re-run Part A once or copy these
+# CSVs across manually. Not committed (train CSV is ~15 MB).
+data/
+
+# --- HuggingFace / datasets cache ---
+.cache/
+**/downloads/
+**/datasets--*/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# --- secrets (never commit API keys - see brief Section 5) ---
+.env
+*.key
+secrets.*
